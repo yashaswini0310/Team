@@ -41,18 +41,11 @@ public class TeamController {
 		return new ResponseEntity<>(newTeam, HttpStatus.CREATED);
 	}
 
-	/*
-	 * public Team addTeam(@RequestBody Team team) {
-	 * 
-	 * 
-	 * return teamService.addTeam(team);
-	 * 
-	 * }
-	 */
+	
 	
 	
 	@GetMapping("/getTeam") // localhost:8761/Team/allTeammembers
-	public List<Team> getTeamById() throws TeamNotFoundException{
+	public List<Team> getAllTeams(){
 		return teamService.getAllTeams();
 	}
 	

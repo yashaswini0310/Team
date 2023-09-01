@@ -9,5 +9,5 @@ import com.example.demo.entity.Team;
 
 @Repository
 public interface ITeamRepository extends JpaRepository<Team,Integer> {
-	Optional<Team> findByTeamId(int Team);
+	Optional<Team> findByTeamId(int team);
 }
